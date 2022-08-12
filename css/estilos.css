@@ -29,7 +29,18 @@ html {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns:-webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out; auto auto auto auto;
+
+}
+
+.parent:hover{
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 header {
@@ -102,9 +113,30 @@ footer {
     grid-template-columns: auto auto auto auto;
     align-content: flex-start;
     justify-content: space-around;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
 
 }
 
+.salados:hover{
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.container{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+
 .container:hover{
-    transition: all 5s;
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
