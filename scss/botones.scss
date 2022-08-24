@@ -1,0 +1,23 @@
+@mixin size-salados {$h, $w}
+
+.salados {
+    border: 0px;
+    height: $h;
+    width: $w;
+    @include size-salados(40px, 40px);
+
+    &--sintacc {
+        background-color: crimson;
+        color: white;
+    }
+
+    &--postres {
+        background-color: aqua;
+        color: white;
+    }
+
+    &--postressinhorno {
+        background-color: darkorchid;
+        color: white;
+    }
+}
