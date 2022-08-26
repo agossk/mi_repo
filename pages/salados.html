@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/estilos.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title>SALADOS</title>
 </head>
 
@@ -34,6 +35,28 @@
     </div>
     </nav>
   </header>
+
+  <div class="main_container">
+    <a href="#" id="abrir"><img src="../images/pasteldecarne.jpg"></a>
+  </div>
+
+  <div id="lightbox">
+    <h1>aca va la receta</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi tenetur numquam optio nihil amet fugiat perferendis accusantium neque alias nisi. Quibusdam consequatur sunt alias voluptates ullam libero tempore in fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laboriosam voluptatibus, sint est eius velit voluptas distinctio sunt, aut quas quia accusamus minus. Repellendus officia iusto aspernatur voluptates aut ducimus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non adipisci dolor tempora possimus dolore dolorum sunt, quaerat facere rem nihil suscipit rerum similique magnam odio maiores odit libero quo reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum explicabo officiis hic! Sint iste consequatur porro molestias. Unde consequatur debitis molestiae cum maiores, rerum quasi molestias esse ipsam, dolorum suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia voluptates ex esse corrupti sapiente, laboriosam neque asperiores voluptatum iste, quae obcaecati dolor! Fugiat deserunt consequuntur quod eum optio est! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi saepe at ipsam officia voluptates, ut ratione porro. Amet, illum. A veritatis id iure maxime suscipit mollitia laudantium quidem, accusamus quaerat?</p>
+    <a href="#"><img src="../images/cerrar.png" id="cerrar"></a>
+  </div>
+
+  <script type="text/javascript">
+    $('#lightbox').hide();
+    $('#abrir').click(function () {
+      $('#lightbox').show('slow');
+    });
+
+    $('#cerrar').click(function () {
+      $('#lightbox').hide('slow');
+    });
+
+  </script>
 
   <div class="salados">
     <a href="../images/pasteldecarne.jpg"><img src="../images/pasteldecarne.jpg" width="300px" height="200px"></a>

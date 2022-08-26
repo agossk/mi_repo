@@ -10,8 +10,8 @@ html {
     font-style: italic;
 }
 
-.introduccion{
-text-decoration-color: aqua;
+.introduccion {
+    text-decoration-color: aqua;
 }
 
 .parent {
@@ -23,15 +23,16 @@ text-decoration-color: aqua;
     flex-wrap: nowrap;
     justify-content: space-around;
     grid-template-columns: auto auto auto auto;
-    grid-template-columns:-webkit-transition: all .2s ease-in-out;
+    grid-template-columns: -webkit-transition: all .2s ease-in-out;
     -moz-transition all: .2s ease-in-out;
     -o-transition all: .2s ease-in-out;
-    -ms-transition all: .2s ease-in-out; auto auto auto auto;
+    -ms-transition all: .2s ease-in-out;
+    auto auto auto auto;
 
 }
 
-.parent:hover{
-    -webkit-transform: scale(1.2); 
+.parent:hover {
+    -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
@@ -49,37 +50,60 @@ header {
 
 }
 
-.logo{
+.logo {
     text-align: left;
 }
 
-.salados:hover{
-    -webkit-transform: scale(1.2); 
+.salados:hover {
+    -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
 }
 
-.container{
+.container {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
 }
 
-.container:hover{
+.container:hover {
     transition: all 5s;
-    -webkit-transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2);
-} 
+}
 
-.menuPpal{
+.menuPpal {
     text-decoration-color: darkmagenta;
     text-decoration: none;
 }
 
-.redessociales{
+.redessociales {
     text-align: center;
+}
+
+#lightbox {
+    z-index: 99;
+    width: 100%;
+    right: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: antiquewhite;
+}
+
+#lightbox h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+#cerrar{
+    position: absolute;
+    top: 5px;
+    width: 25px;
+    right: 5px;
 }
